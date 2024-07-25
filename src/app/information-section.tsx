@@ -105,7 +105,7 @@ const PROJECTS = [
     title: "BIP39 JavaScript Implementation",
     date: "WEB3",
     children:
-      "A JavaScript implementation of a cryptocurrency wallet generator for Bitcoin & Ethereum.",
+      "A JavaScript implementation of a cryptocurrency wallet generator for Bitcoin and Ethereum.",
   },
   {
     icon: FireIcon,
