@@ -13,14 +13,13 @@ export function Testimonial() {
       <div className="container max-w-screen-lg mx-auto">
         <div className="container mx-auto mb-20 text-center">
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            What Clients Say
+            TL;DR
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            Discover what clients have to say about their experiences working
-            with me. My client&apos;s satisfaction is my greatest achievement!
+            Time is of the essence, so here's a quick summary.
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
@@ -31,62 +30,26 @@ export function Testimonial() {
                 color="blue-gray"
                 className="mb-4 font-bold lg:max-w-xs"
               >
-                Mobile App Development
+                Background
               </Typography>
               <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500">
-                I had the pleasure of working with Lily on a critical web
-                development project, and I can confidently say that their
-                expertise and professionalism exceeded my expectations.
+              - ISTQB Certified QA Engineer with DevOps experience. I also like distributed systems.
               </Typography>
               <Typography variant="h6" color="blue-gray" className="mb-0.5">
-                Michael - Technical Manager
+                - Bachelor's Degree in Entrepreneurial Management.
               </Typography>
               <Typography
                 variant="small"
                 className="font-normal mb-5 !text-gray-500"
               >
-                Marketing @ APPLE INC.
+                  Class of 2018
               </Typography>
-              <div className="flex items-center gap-4">
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar1.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 1 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(1)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar2.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 2 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(2)}
-                />
-                <div className="w-[1px] h-[36px] bg-blue-gray-100" />
-                <Avatar
-                  variant="rounded"
-                  src="/image/avatar3.jpg"
-                  alt="spotify"
-                  size="sm"
-                  className={`cursor-pointer ${
-                    active === 3 ? "opacity-100" : "opacity-50"
-                  }`}
-                  onClick={() => setActive(3)}
-                />
-              </div>
             </div>
-            <div className="h-[21rem] rounded-lg w-full sm:w-[18rem] shrink-0">
+            <div className="h-[15rem] rounded-lg w-full sm:w-[15rem] shrink-0">
               <Image
                 width={768}
                 height={768}
-                src={`/image/avatar${active}.jpg`}
+                src={`/image/zak.jpg`}
                 alt="testimonial image"
                 className="h-full rounded-lg w-full object-cover"
               />

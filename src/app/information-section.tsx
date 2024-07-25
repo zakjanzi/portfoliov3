@@ -8,32 +8,32 @@ import {
 
 import InfoCard from "@/components/info-card";
 
-const EDUCATION = [
+const WORKEXPERIENCE = [
   {
     icon: AcademicCapIcon,
-    title: "Certified Web Developer - Web Development Institute",
-    date: "2016",
+    title: "DevOps Engineer",
+    date: "2023 - Present",
     children:
       "This comprehensive program covered HTML5, CSS3, JavaScript, responsive design, server-side scripting, and web security.",
   },
   {
     icon: AcademicCapIcon,
-    title: "Responsive Web Design Certification - FreeCodeCamp",
-    date: "2015",
-    children:
-      "The Responsive Web Design certification signifies competence in designing and developing websites that adapt seamlessly to various screen sizes and devices.",
-  },
-  {
-    icon: AcademicCapIcon,
-    title: "JavaScript Developer Certification - Code Academy",
-    date: "2014",
+    title: "QA Automation Engineer",
+    date: "2022 - 2023",
     children:
       "This certification demonstrates advanced proficiency in JavaScript programming, including ES6 features and practical applications.",
   },
   {
     icon: AcademicCapIcon,
-    title: "Bachelor of Science in Computer Science - XYZ University",
-    date: "2014-2016",
+    title: "Manual QA Engineer",
+    date: "2021 - 2023",
+    children:
+      "The Responsive Web Design certification signifies competence in designing and developing websites that adapt seamlessly to various screen sizes and devices.",
+  },
+  {
+    icon: AcademicCapIcon,
+    title: "Technical Writer",
+    date: "2023 - Present",
     children:
       "Relevant Coursework: Data Structures, Algorithms, Web Development, Software Engineering, Database Management.",
   },
@@ -70,32 +70,96 @@ const EXPERIENCE = [
   },
 ];
 
-const SKILLS = [
+
+const WRITING = [
+  {
+    icon: BriefcaseIcon,
+    title: "How To Quantum Proof Your App",
+    date: "2024",
+    //link:
+    children:
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+  },
+  {
+    icon: BriefcaseIcon,
+    title: "Cloud Load Testing",
+    date: "2023",
+    //link:
+    children:
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+  },
+  {
+    icon: BriefcaseIcon,
+    title: "Test Environment Management",
+    date: "2023 - PRESENT",
+    //link:
+    children:
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+  },
+
+];
+
+const PROJECTS = [
   {
     icon: FireIcon,
-    title: "Front-End Frameworks",
-    date: "Technical Skills",
+    title: "BIP39 JavaScript Implementation",
+    date: "WEB3",
     children:
-      "Competent in working with front-end frameworks such as React, Angular, or Vue.js to develop dynamic and responsive web applications with a focus on user experience.",
+      "A JavaScript implementation of a cryptocurrency wallet generator for Bitcoin & Ethereum.",
   },
   {
     icon: FireIcon,
-    title: "Attention to Detail",
-    date: "Soft Skills",
+    title: "A Smart-Contract Project",
+    date: "WEB3",
+    children:
+      "A ZK-Proof validator smart-contract.",
+  },
+  {
+    icon: FireIcon,
+    title: "A ZK-Proof Project",
+    date: "WEB3 / ALGORITHMS",
     children:
       "Meticulous attention to detail in code quality, user interface design, and testing to ensure error-free and user-friendly web applications.",
   },
   {
     icon: FireIcon,
-    title: "Responsive Web Design",
-    date: "Technical Skills",
+    title: "A Quantum Proof App",
+    date: "BACKEND / ALGORITHMS",
     children:
-      "Skilled in creating responsive layouts using CSS Grid, Flexbox, and media queries. Ensures websites adapt seamlessly to various screen sizes and devices.",
+      "A  quantum proof app. I wrote an entire article about this particular project (see below)",
   },
   {
     icon: FireIcon,
-    title: "Time Management",
-    date: "Soft Skills",
+    title: "A Python Scraper",
+    date: "AUTOMATION",
+    children:
+      "A script that scrapes the value of the LBP against the USD at the shadow market rate, then stores it in a DB.",
+  },
+  {
+    icon: FireIcon,
+    title: "Game of Life",
+    date: "ALGORITHMS",
+    children:
+      "Conway’s Game of Life cellular automata simulation in JavaScript.",
+  },
+  {
+    icon: FireIcon,
+    title: "Game of Life On Steroids",
+    date: "ALGORITHMS",
+    children:
+      "Slightly more complex version of the former.",
+  },
+  {
+    icon: FireIcon,
+    title: "Automated Testing Framework",
+    date: "QA / AUTOMATION",
+    children:
+      "A suite of automated tests for an E-Bank using Selenium and TestNG.",
+  },
+  {
+    icon: FireIcon,
+    title: "A Company Site",
+    date: "FRONTEND",
     children:
       "Excellent time management skills to meet project deadlines, prioritize tasks effectively, and handle multiple projects simultaneously.",
   },
@@ -108,19 +172,19 @@ export function InformationSection() {
         <div>
           <div className="mb-10">
             <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
-              Education & Certifications
+              Work Experience
             </Typography>
-            <Typography variant="lead" className="!text-gray-500">
+            {/* <Typography variant="lead" className="!text-gray-500">
               See my education history.
-            </Typography>
+            </Typography> */}
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12">
-            {EDUCATION.map((props, idx) => (
+            {WORKEXPERIENCE.map((props, idx) => (
               <InfoCard key={idx} {...props} />
             ))}
           </div>
         </div>
-        <div>
+        {/* <div>
           <div className="mb-10">
             <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
               Experience
@@ -134,20 +198,38 @@ export function InformationSection() {
               <InfoCard key={idx} {...props} />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="container gap-20 mt-36 mx-auto items-center">
         <div>
           <div className="mb-10">
             <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
-              Skills
+              Projects
             </Typography>
             <Typography variant="lead" className="!text-gray-500">
-              Check out my technical and soft skills.
+              Personal and freelance projects.
             </Typography>
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
-            {SKILLS.map((props, idx) => (
+            {PROJECTS.map((props, idx) => (
+              <InfoCard key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="container gap-20 mt-36 mx-auto items-center">
+        <div>
+          <div className="mb-10">
+            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+              Writing
+            </Typography>
+            <Typography variant="lead" className="!text-gray-500">
+              A collection of thoughts, articles, and documentation.
+            </Typography>
+          </div>
+          <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
+            {WRITING.map((props, idx) => (
               <InfoCard key={idx} {...props} />
             ))}
           </div>
