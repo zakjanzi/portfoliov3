@@ -45,7 +45,7 @@ const EXPERIENCE = [
     title: "Freelancer Web Developer",
     date: "2023 - PRESENT",
     children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
   },
   {
     icon: BriefcaseIcon,
@@ -78,7 +78,7 @@ const WRITING = [
     date: "2024",
     //link:
     children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
   },
   {
     icon: BriefcaseIcon,
@@ -86,7 +86,7 @@ const WRITING = [
     date: "2023",
     //link:
     children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
   },
   {
     icon: BriefcaseIcon,
@@ -94,7 +94,7 @@ const WRITING = [
     date: "2023 - PRESENT",
     //link:
     children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the project's specifications.",
+      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
   },
 
 ];

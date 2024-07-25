@@ -29,7 +29,7 @@ function Hero() {
             color="gray"
             className="mt-12 mb-5 w-full md:max-w-full lg:max-w-4xl"
           >
-           I'm Zak. A QA Engineer with DevOps experience. <br></br> I also like distributed systems.
+           I&aposm Zak. A QA Engineer with DevOps experience. <br></br> I also like distributed systems.
           </Typography>
           <Typography className="mt-12 mb-4 text-blue-gray-900 font-medium uppercase">
             Connect

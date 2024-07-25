@@ -19,7 +19,7 @@ export function Testimonial() {
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            Time is of the essence, so here's a quick summary.
+            Time is of the essence, so here&aposs a quick summary.
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
@@ -36,7 +36,7 @@ export function Testimonial() {
               - ISTQB Certified QA Engineer with DevOps experience. I also like distributed systems.
               </Typography>
               <Typography variant="h6" color="blue-gray" className="mb-0.5">
-                - Bachelor's Degree in Entrepreneurial Management.
+                - Bachelors Degree in Entrepreneurial Management.
               </Typography>
               <Typography
                 variant="small"
