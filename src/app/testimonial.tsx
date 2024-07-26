@@ -9,7 +9,7 @@ export function Testimonial() {
   const [active, setActive] = React.useState(3);
 
   return (
-    <section className="py-12 px-8 lg:py-24">
+    <section id = "tldr" className="py-12 px-8 lg:py-24">
       <div className="container max-w-screen-lg mx-auto">
         <div className="container mx-auto mb-20 text-center">
           <Typography variant="h2" color="blue-gray" className="mb-4">
@@ -19,7 +19,7 @@ export function Testimonial() {
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            Time is of the essence, so here&aposs a quick summary.
+            Time is of the essence, so here&apos;s a brief about my background and expertise.
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
@@ -30,21 +30,38 @@ export function Testimonial() {
                 color="blue-gray"
                 className="mb-4 font-bold lg:max-w-xs"
               >
-                Background
+                Tech Stack
               </Typography>
-              <Typography className="mb-3 w-full lg:w-8/12 font-normal !text-gray-500">
-              - ISTQB Certified QA Engineer with DevOps experience. I also like distributed systems.
-              </Typography>
-              <Typography variant="h6" color="blue-gray" className="mb-0.5">
-                - Bachelors Degree in Entrepreneurial Management.
-              </Typography>
+              <ul className="list-disc pl-5">
+                <li><strong>Languages:</strong> Solidity, Java, JavaScript, Python, SQL.</li>
+                <li><strong>Technologies:</strong> MERN, LAMP, NGINX, AWS.</li>
+                <li><strong>Testing frameworks:</strong> Cypress, Selenium, Appium, RESTAssured, TestNG.</li>
+                <li><strong>Tools:</strong> Git, Jenkins, Docker, Grafana, JMeter, Postman, JIRA.</li>
+             </ul>
               <Typography
-                variant="small"
-                className="font-normal mb-5 !text-gray-500"
+                variant="h3"
+                color="blue-gray"
+                className="mb-4 font-bold lg:max-w-xs mt-4"
               >
-                  Class of 2018
+                Education
               </Typography>
-            </div>
+              <ul className="list-disc pl-5">
+                <li><strong>ISTQB</strong> Certified QA Tester</li>
+                <li><strong>Bachelors Degree</strong> - Entrepreneurial Management.</li>
+             </ul>
+              <Typography
+                  variant="h3"
+                  color="blue-gray"
+                  className="mb-4 font-bold lg:max-w-xs mt-4"
+                >
+                  Other
+                </Typography>
+                <ul className="list-disc pl-5">
+                  <li><strong>Europe</strong> based</li>
+                  <li><strong>Available</strong> on a remote or hybrid basis</li>
+                  <li><strong>Trilingual</strong></li>
+              </ul>
+          </div>
             <div className="h-[15rem] rounded-lg w-full sm:w-[15rem] shrink-0">
               <Image
                 width={768}

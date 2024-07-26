@@ -8,14 +8,18 @@ import {
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
-const NAV_MENU = ["Home", "About Us", "Contact Us"];
+const NAV_MENU = [
+  { name: "Projects", href: "http://localhost:3000#projects" },
+  { name: "About", href: "http://localhost:3000#tldr" },
+  { name: "Blog", href: "http://localhost:3000#blog" },
+];
 
-function NavItem({ children }: { children: React.ReactNode }) {
+function NavItem({ children, href }: { children: React.ReactNode; href: string }) {
   return (
     <li>
       <Typography
         as="a"
-        href="#"
+        href={href}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -56,17 +60,16 @@ export function Navbar() {
           color="blue-gray"
           className="text-lg font-bold"
         >
-          Material Tailwind
+          Zak's Portfolio
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          {NAV_MENU.map((nav) => (
-            <NavItem key={nav}>{nav}</NavItem>
+          {NAV_MENU.map(({ name, href }) => (
+            <NavItem key={name} href={href}>{name}</NavItem>
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Log in</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+          <a href="https://contra.com/zakjanzi_z23fzkfn" target="_blank">
+            <Button color="gray">Hire me on Contra</Button>
           </a>
         </div>
         <IconButton
@@ -85,16 +88,10 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
           <ul className="flex flex-col gap-4">
-            {NAV_MENU.map((nav) => (
-              <NavItem key={nav}>{nav}</NavItem>
+            {NAV_MENU.map(({ name, href }) => (
+              <NavItem key={name} href={href}>{name}</NavItem>
             ))}
           </ul>
-          <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Log in</Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
-            </a>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>
