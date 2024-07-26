@@ -5,33 +5,49 @@ import {
   Typography,
   IconButton,
 } from "@material-tailwind/react";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid"; // Use solid icon for internal color
 
 interface InfoCardProps {
-  // icon: React.ElementType;
   title: string;
   date: string;
   children?: React.ReactNode;
   company: string;
-  description?: string | string[]; // New prop for rendering bullet points
-  imageSrc?: string; // Optional image source
+  tools: string;
+  description?: string | string[];
+  imageSrc?: string;
+  isLinked?: boolean; // New prop for conditional rendering
+  link?: string; // New prop for the URL
 }
 
 export function InfoCard({
-  // icon: Icon,
   title,
   date,
   children,
   company,
+  tools,
   description = '',
-  imageSrc, // Destructure imageSrc from props
+  imageSrc,
+  isLinked = false,
+  link, // Destructure link from props
 }: InfoCardProps) {
   return (
-    <Card>
+    <Card className="relative">
       <CardHeader
         className="flex items-center justify-between rounded-none overflow-visible"
         floated={false}
         shadow={false}
       >
+        {isLinked && link && (
+          <div className="absolute top-2 right-2">
+            <IconButton
+            variant="text"
+              className="p-1"
+              onClick={() => window.open(link, '_blank')} // Open the provided link
+            >
+              <ArrowTopRightOnSquareIcon className="h-4 w-4 text-gray-800" /> {/* Adjusted size and color */}
+            </IconButton>
+          </div>
+        )}
         <div className="flex flex-col gap-1 w-full">
           <Typography color="blue" className="font-bold text-xs">
             {date}
@@ -42,7 +58,6 @@ export function InfoCard({
           <Typography color="blue-gray" variant="h5" className="w-full">
             {title}
           </Typography>
-          {/* Render description as a bulleted list */}
           {description && (
             <ul className="list-disc pl-5">
               {Array.isArray(description)
@@ -52,25 +67,21 @@ export function InfoCard({
           )}
         </div>
         <div className="flex items-center space-x-4">
-          {/* <IconButton
-            className="pointer-events-none"
-            ripple={false}
-          >
-            <Icon className="h-5 w-5" strokeWidth={2} />
-          </IconButton> */}
           {imageSrc && (
             <img src={imageSrc} alt={`${title} Image`} className="absolute top-0 right-0 w-16 h-16 object-cover" />
           )}
         </div>
       </CardHeader>
       <CardBody className="grid justify-start !px-3.5 pt-2">
-        {/* Optionally render children or leave empty if not needed */}
         {children && (
-          <Typography className="font-normal !text-gray-500">
+          <Typography className="font-normal !text-gray-500 mb-4">
             {children}
           </Typography>
         )}
       </CardBody>
+      <Typography color="gray" className="absolute bottom-2 left-4 mb-1 font-bold text-xs">
+        {tools}
+      </Typography>
     </Card>
   );
 }

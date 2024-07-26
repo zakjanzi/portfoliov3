@@ -19,7 +19,7 @@ export function Testimonial() {
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            Time is of the essence, so here&apos;s a brief about my background and expertise.
+            Time is of the essence, so here&apos;s a summary about my background and experience.
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">
@@ -62,13 +62,13 @@ export function Testimonial() {
                   <li><strong>Trilingual</strong></li>
               </ul>
           </div>
-            <div className="h-[15rem] rounded-lg w-full sm:w-[15rem] shrink-0">
+            <div className="h-[10rem] rounded-full w-full sm:w-[10rem] shrink-0">
               <Image
                 width={768}
                 height={768}
                 src={`/image/zak.jpg`}
                 alt="testimonial image"
-                className="h-full rounded-lg w-full object-cover"
+                className="h-full rounded-full w-full object-cover"
               />
             </div>
           </CardBody>

@@ -1,10 +1,10 @@
 "use client";
 import { Typography } from "@material-tailwind/react";
-import {
-  AcademicCapIcon,
-  BriefcaseIcon,
-  FireIcon,
-} from "@heroicons/react/24/solid";
+// import {
+//   AcademicCapIcon,
+//   BriefcaseIcon,
+//   FireIcon,
+// } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 import InfoCard from "@/components/info-card";
@@ -17,7 +17,7 @@ const WORKEXPERIENCE = [
     company: "Lebanese Alternative Learning",
     children: [],
     description: [
-      "Implemented and maintained security measures while continuously monitoring server health.", "Managed deployments across various physical and virtual environments", "Kept etailed documentation on all technical procedures and guides for all stakeholders.", "Contributed to open-source projects (Moodle) " 
+      "Implemented and maintained security measures while continuously monitoring server health.", "Managed deployments across various physical and virtual environments", "Kept detailed documentation on all technical procedures and guides for all stakeholders.", "Contributed to open-source projects (Moodle) " 
     ],
      imageSrc:"/image/lal.png"
   },
@@ -50,46 +50,46 @@ const WORKEXPERIENCE = [
     company: "Inbound Square (Contract)",
     children: [],
     description: [
-      "Wrote technical articles covering topics related to SaaS/PaaS tools. Examples available below.",
+      "Wrote technical articles covering topics related to SaaS/PaaS tools. See the writing section below for samples.",
     ]
   },
 ];
 
 const WRITING = [
   {
-    icon: BriefcaseIcon,
     title: "How To Quantum Proof Your App",
     date: "2024",
-    //link:
-    children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
+    children: "This article discusses how to implement quantum-resistant services. Start getting ready for a post-quantum world.",
+    link: "https://google.com",
   },
   {
-    icon: BriefcaseIcon,
+    title: "Install IOMAD On Top of Moodle",
+    date: "2024",
+    children: "IOMAD is a tenant solution built on top of Moodle. In this guide, we'll walk through installing and configuring IOMAD on top of your existing Moodle installation.",
+    link: "https://zakjanzi.me",
+  },
+  {
     title: "Cloud Load Testing",
     date: "2023",
-    //link:
-    children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
+    children: "An article about cloud load testing concepts, tools and best practices.",
+    link: "https://www.multiple.dev/automated-performance-testing/cloud-load-testing",
   },
   {
-    icon: BriefcaseIcon,
     title: "Test Environment Management",
-    date: "2023 - PRESENT",
-    //link:
-    children:
-      "The core of my work involved actual web development. I would write code, design layouts, and create functionality based on the projects specifications.",
+    date: "2023",
+    children: "An article about test environment management best practices.",
+    link: "https://www.withcoherence.com/post/test-environment-management",
   },
-
 ];
-
 const PROJECTS = [
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "BIP39 JavaScript Implementation",
     date: "#WEB3",
+    link: "https://github.com/zakjanzi/Crypto-Wallet-Implementation",
     children:
       "A JavaScript implementation of a cryptocurrency wallet generator for Bitcoin and Ethereum.",
+    tools: "Tools: Node.js, Ethers.js, BIP39.js",
   },
   // {
   //   icon: FireIcon,
@@ -106,25 +106,30 @@ const PROJECTS = [
   //     "Meticulous attention to detail in code quality, user interface design, and testing to ensure error-free and user-friendly web applications.",
   // },
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "A Quantum Proof App",
     date: "#BACKEND #ALGORITHMS",
     children:
-      "A  quantum proof app. I wrote an entire article about this particular project (see below)",
+      "A  quantum proof authentication service for a post-quantum computing world.",
+    tools: "Tools: this, that",
   },
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "A Python Scraper",
     date: "#AUTOMATION",
+    link: "https://github.com/zakjanzi/lira-rate-scraper",
     children:
       "A script that scrapes the value of the LBP against the USD at the shadow market rate, then stores it in a DB.",
+    tools: "Tools: Python, AWS Lambda, MongoDB, Docker",
   },
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "Game of Life",
     date: "#ALGORITHMS",
+    link: "https://github.com/zakjanzi/Conways-Game-of-Life",
     children:
-      "Conway’s Game of Life cellular automata simulation in JavaScript.",
+      "Conway&apos;s Game of Life cellular automata simulation in JavaScript.",
+    tools: "Tools: 🍦JavaScript, p5.js",
   },
   // {
   //   icon: FireIcon,
@@ -134,18 +139,22 @@ const PROJECTS = [
   //     "Slightly more complex version of the former.",
   // },
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "Automated Testing Framework",
     date: "#QA #AUTOMATION",
+    link: "https://github.com/zakjanzi/E2E-Testing-Framework",
     children:
       "A suite of automated tests for an E-Bank using Selenium and TestNG.",
+    tools: "Tools: Selenium, Java, TestNG",
   },
   {
-    icon: FireIcon,
+    // icon: FireIcon,
     title: "A Company Site",
     date: "#FRONTEND",
+    link: "https://github.com/zakjanzi/team-adrenaline-website",
     children:
       "A static website for a Parkour gym.",
+    tools: "Tools: HTML, SCSS, 🍦JavaScript",
   },
 ];
 
@@ -206,7 +215,7 @@ export function InformationSection() {
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
             {filteredProjects.map((props, idx) => (
-              <InfoCard key={idx} {...props} />
+              <InfoCard key={idx} {...props} isLinked={true}/>
             ))}
           </div>
         </div>
@@ -224,7 +233,7 @@ export function InformationSection() {
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
             {WRITING.map((props, idx) => (
-              <InfoCard key={idx} {...props} />
+              <InfoCard key={idx} {...props} isLinked={true} />
             ))}
           </div>
         </div>

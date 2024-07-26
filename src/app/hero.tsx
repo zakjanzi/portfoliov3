@@ -4,11 +4,12 @@ import { IconButton, Typography } from "@material-tailwind/react";
 
 // TODO
 /* 
-- fix navbar Blog + write article
-- Images (inside cards)
-- filters for projects section (based on tags)
-- Tools/stack keys
-- Try circle image
+- add Inbound Square image
+- write quantum app article
+- build quantum app project
+- write iomad article
+- write zk-proof article and/or project (optional)
+- add CV (update it)
 */
 
 function Hero() {
@@ -39,12 +40,16 @@ function Hero() {
             Connect
           </Typography>
           <div className="gap-2 lg:flex">
+          <a href="https://www.linkedin.com/in/zakaria-j-714816111/" target="_blank" rel="noopener noreferrer">
             <IconButton variant="text" color="gray">
               <i className="fa-brands fa-linkedin text-lg" />
             </IconButton>
+            </a>
+            <a href="https://github.com/zakjanzi" target="_blank" rel="noopener noreferrer">
             <IconButton variant="text" color="gray">
               <i className="fa-brands fa-github text-lg" />
             </IconButton>
+            </a>
           </div>
         </div>
       </div>
