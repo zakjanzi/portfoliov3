@@ -23,6 +23,9 @@ function NavItem({ children, href }: { children: React.ReactNode; href: string }
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
+        placeholder={""}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         {children}
       </Typography>
@@ -51,14 +54,20 @@ export function Navbar() {
       shadow={false}
       color="white"
       className="sticky top-0 z-50 border-0"
+      placeholder={""}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
           color="blue-gray"
           className="text-lg font-bold"
+          placeholder={""}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
-          Zak's Portfolio
+          Zak&apos;s Portfolio
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, href }) => (
@@ -67,7 +76,12 @@ export function Navbar() {
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
           <a href="https://contra.com/zakjanzi_z23fzkfn" target="_blank">
-            <Button color="gray">Hire me on Contra</Button>
+            <Button color="gray"
+                    placeholder={""}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
+                    >Hire me on Contra
+              </Button>
           </a>
         </div>
         <IconButton
@@ -75,6 +89,9 @@ export function Navbar() {
           color="gray"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          placeholder={""}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />

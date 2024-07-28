@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 //   BriefcaseIcon,
 //   FireIcon,
 // } from "@heroicons/react/24/solid";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 import InfoCard from "@/components/info-card";
 
@@ -163,10 +163,10 @@ export function InformationSection() {
   const [selectedFilter, setSelectedFilter] = useState("ALL");
   const [filteredProjects, setFilteredProjects] = useState(PROJECTS);
 
-  const handleFilterClick = (filter) => {
+  const handleFilterClick = (filter: SetStateAction<string>) => {
     setSelectedFilter(filter);
     setFilteredProjects(
-      filter === "ALL" ? PROJECTS : PROJECTS.filter((project) => project.date.includes(filter.toUpperCase()))
+      filter === "ALL" ? PROJECTS : PROJECTS.filter((project) => project.date.includes)
     );
   };
 
@@ -175,7 +175,12 @@ export function InformationSection() {
       <div className="grid xl:grid-cols-2 md:grid-cols-1 container gap-20 mx-auto items-start">
         <div>
           <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+            <Typography 
+              color="blue-gray" 
+              className="mb-2 text-3xl font-bold"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
               Work Experience
             </Typography>
             {/* <Typography variant="lead" className="!text-gray-500">
@@ -184,7 +189,7 @@ export function InformationSection() {
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12">
             {WORKEXPERIENCE.map((props, idx) => (
-              <InfoCard key={idx} {...props} />
+              <InfoCard tools={""} key={idx} {...props} />
             ))}
           </div>
         </div>
@@ -192,10 +197,20 @@ export function InformationSection() {
       <div id="projects" className="container gap-20 mt-36 mx-auto items-center">
         <div>
           <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+            <Typography 
+              color="blue-gray" 
+              className="mb-2 text-3xl font-bold"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
               Projects
             </Typography>
-            <Typography variant="lead" className="!text-gray-500">
+            <Typography 
+              variant="lead" 
+              className="!text-gray-500"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
               Personal and freelance projects.
             </Typography>
           </div>
@@ -214,7 +229,7 @@ export function InformationSection() {
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
             {filteredProjects.map((props, idx) => (
-              <InfoCard key={idx} {...props} isLinked={true} isLive={true}/>
+              <InfoCard key={idx} {...props} isLinked={true} isLive={true} company={""}/>
             ))}
           </div>
         </div>
@@ -223,16 +238,26 @@ export function InformationSection() {
       <div className="container gap-20 mt-36 mx-auto items-center">
         <div>
           <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+            <Typography 
+              color="blue-gray" 
+              className="mb-2 text-3xl font-bold"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
               Writing
             </Typography>
-            <Typography variant="lead" className="!text-gray-500">
+            <Typography 
+              variant="lead" 
+              className="!text-gray-500"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
               A collection of thoughts, articles, and documentation.
             </Typography>
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
             {WRITING.map((props, idx) => (
-              <InfoCard key={idx} {...props} isLinked={true} />
+              <InfoCard company={""} tools={""} key={idx} {...props} isLinked={true} />
             ))}
           </div>
         </div>

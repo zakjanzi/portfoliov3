@@ -35,11 +35,17 @@ export function InfoCard({
   live,
 }: InfoCardProps) {
   return (
-    <Card className="relative">
+    <Card className="relative"         
+        placeholder={""}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}>
       <CardHeader
         className="flex items-center justify-between rounded-none overflow-visible"
         floated={false}
         shadow={false}
+        placeholder={""}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
       >
         {isLinked && link && (
           <div className="absolute top-2 right-2">
@@ -47,19 +53,32 @@ export function InfoCard({
             variant="text"
               className="p-1"
               onClick={() => window.open(link, '_blank')} // Open the provided link
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               <ArrowTopRightOnSquareIcon className="h-4 w-4 text-gray-800" /> {/* Adjusted size and color */}
             </IconButton>
           </div>
         )}
         <div className="flex flex-col gap-1 w-full">
-          <Typography color="blue" className="font-bold text-xs">
+          <Typography 
+          color="blue" 
+          className="font-bold text-xs"
+          placeholder={""}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}>
             {date}
           </Typography>
-          <Typography color="blue-gray" className="font-bold text-xs text-left mr-10">
+          <Typography 
+            color="blue-gray" 
+            className="font-bold text-xs text-left mr-10"
+            placeholder={""}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}>
             {company}
           </Typography>
-          <Typography color="blue-gray" variant="h5" className="w-full">
+          <Typography color="blue-gray" variant="h5" className="w-full" placeholder={""} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             {title}
           </Typography>
           {description && (
@@ -76,18 +95,30 @@ export function InfoCard({
           )}
         </div>
       </CardHeader>
-      <CardBody className="grid justify-start !px-3.5 pt-2">
+      <CardBody className="grid justify-start !px-3.5 pt-2"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
         {children && (
-          <Typography className="font-normal !text-gray-500 mb-4">
+          <Typography className="font-normal !text-gray-500 mb-4"
+          placeholder={""}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}>
             {children}
           </Typography>
         )}
       </CardBody>
-      <Typography color="gray" className="absolute bottom-2 left-4 mb-1 font-bold text-xs">
+      <Typography color="gray" className="absolute bottom-2 left-4 mb-1 font-bold text-xs"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
         {tools}
       </Typography>
       {isLive && live && (
-      <Typography color="gray" className="absolute bottom-2 right-4 mb-1 font-bold text-xs underline">
+      <Typography color="gray" className="absolute bottom-2 right-4 mb-1 font-bold text-xs underline"
+      placeholder={""}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}>
           <a href={live} target="_blank" rel="noopener noreferrer">
             VIEW LIVE
           </a>

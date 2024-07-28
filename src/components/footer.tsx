@@ -8,7 +8,10 @@ export function Footer() {
     <footer className="mt-10 px-8 pt-20">
       <div className="container mx-auto">
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
-          <Typography className="text-center font-normal !text-gray-700">
+          <Typography className="text-center font-normal !text-gray-700"
+                  placeholder={""}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}>
             &copy; {CURRENT_YEAR} Zak J.
           </Typography>
           <ul className="flex gap-8 items-center">
@@ -19,12 +22,19 @@ export function Footer() {
                   href="#"
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
+                  placeholder={""}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
                 >
                   {link}
                 </Typography>
               </li>
             ))}
-            <Button color="gray">Calendly</Button>
+            <Button 
+              color="gray"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>Calendly</Button>
           </ul>
         </div>
       </div>
