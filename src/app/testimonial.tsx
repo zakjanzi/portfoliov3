@@ -96,7 +96,7 @@ export function Testimonial() {
                 height={768}
                 src={`/image/zak.jpg`}
                 alt="testimonial image"
-                className="h-full rounded-full w-full object-cover"
+                className="w-full h-auto max-w-xs max-h-xs rounded-full object-cover"
               />
             </div>
           </CardBody>

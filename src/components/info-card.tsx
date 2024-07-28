@@ -48,7 +48,7 @@ export function InfoCard({
         onPointerLeaveCapture={undefined}
       >
         {isLinked && link && (
-          <div className="absolute top-2 right-2">
+          <div className="absolute top-0 right-1">
             <IconButton
             variant="text"
               className="p-1"
