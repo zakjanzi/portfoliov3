@@ -23,6 +23,17 @@ const WORKEXPERIENCE = [
   },
   {
     // icon: AcademicCapIcon,
+    title: "Technical Writer",
+    date: "2023 - Present",
+    company: "Inbound Square (Contract)",
+    children: [],
+    description: [
+      "Wrote technical articles covering topics related to SaaS/PaaS tools. See the writing section below for samples.",
+    ],
+    imageSrc: "/image/inbound-square.jpg"
+  },
+  {
+    // icon: AcademicCapIcon,
     title: "QA Automation Engineer",
     date: "2022 - 2023",
     company: "Tylleum - (Contract)",
@@ -39,34 +50,19 @@ const WORKEXPERIENCE = [
     company: "One More Multiverse",
     children: [],
     description: [
-      "Designed, developed and executed comprehensive, well-structured test plans and test cases to ensure software quality.", "•	Recorded, documented and triaged software bugs thoroughly", "Coordinated with product owners for testing plans and feature releases."
+      "Designed, developed and executed comprehensive test plans and test cases to ensure software quality.", "Recorded, documented and triaged software bugs thoroughly.", "Coordinated with product owners for testing plans and feature releases.", "Managed a small team of junior testers."
     ],
     imageSrc:"/image/multiverse.jpg"
   },
-  {
-    // icon: AcademicCapIcon,
-    title: "Technical Writer",
-    date: "2023 - Present",
-    company: "Inbound Square (Contract)",
-    children: [],
-    description: [
-      "Wrote technical articles covering topics related to SaaS/PaaS tools. See the writing section below for samples.",
-    ]
-  },
+
 ];
 
 const WRITING = [
   {
-    title: "How To Quantum Proof Your App",
+    title: "Zero-Knowledge Proofs: A Shallow Dive",
     date: "2024",
-    children: "This article discusses how to implement quantum-resistant services. Start getting ready for a post-quantum world.",
-    link: "https://google.com",
-  },
-  {
-    title: "Install IOMAD On Top of Moodle",
-    date: "2024",
-    children: "IOMAD is a tenant solution built on top of Moodle. In this guide, we'll walk through installing and configuring IOMAD on top of your existing Moodle installation.",
-    link: "https://zakjanzi.me",
+    children: "Demystifying ZK-Proofs using a blend of layman's terms and a bit of technical depth.",
+    link: "s",
   },
   {
     title: "Cloud Load Testing",
@@ -107,11 +103,12 @@ const PROJECTS = [
   // },
   {
     // icon: FireIcon,
-    title: "A Quantum Proof App",
+    title: "A Quantum Proof Web Server",
     date: "#BACKEND #ALGORITHMS",
+    link: "https://github.com/zakjanzi/quantum-proof-server",
     children:
-      "A  quantum proof authentication service for a post-quantum computing world.",
-    tools: "Tools: this, that",
+      "A  quantum-resistant web server for a post-quantum computing world.",
+    tools: "Tools: NGINX, libqos",
   },
   {
     // icon: FireIcon,
@@ -127,6 +124,7 @@ const PROJECTS = [
     title: "Game of Life",
     date: "#ALGORITHMS",
     link: "https://github.com/zakjanzi/Conways-Game-of-Life",
+    live: "https://zak-gameoflife.netlify.app/",
     children:
       "Conway&apos;s Game of Life cellular automata simulation in JavaScript.",
     tools: "Tools: 🍦JavaScript, p5.js",
@@ -152,6 +150,7 @@ const PROJECTS = [
     title: "A Company Site",
     date: "#FRONTEND",
     link: "https://github.com/zakjanzi/team-adrenaline-website",
+    live: "https://teamadrenaline.me",
     children:
       "A static website for a Parkour gym.",
     tools: "Tools: HTML, SCSS, 🍦JavaScript",
@@ -215,7 +214,7 @@ export function InformationSection() {
           </div>
           <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12 lg:grid-cols-2">
             {filteredProjects.map((props, idx) => (
-              <InfoCard key={idx} {...props} isLinked={true}/>
+              <InfoCard key={idx} {...props} isLinked={true} isLive={true}/>
             ))}
           </div>
         </div>

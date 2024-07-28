@@ -10,8 +10,8 @@ import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   { name: "Projects", href: "http://localhost:3000#projects" },
-  { name: "About", href: "http://localhost:3000#tldr" },
-  { name: "Blog", href: "http://localhost:3000#blog" },
+  { name: "Bio", href: "http://localhost:3000#tldr" },
+  // { name: "Blog", href: "http://localhost:3000#blog" },
 ];
 
 function NavItem({ children, href }: { children: React.ReactNode; href: string }) {
@@ -55,8 +55,6 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
           color="blue-gray"
           className="text-lg font-bold"
         >

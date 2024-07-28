@@ -2,15 +2,6 @@
 
 import { IconButton, Typography } from "@material-tailwind/react";
 
-// TODO
-/* 
-- add Inbound Square image
-- write quantum app article
-- build quantum app project
-- write iomad article
-- write zk-proof article and/or project (optional)
-- add CV (update it)
-*/
 
 function Hero() {
   return (
@@ -34,7 +25,7 @@ function Hero() {
             type="button"
             style={{ position: 'relative', overflow: 'hidden' }}
           >
-            DOWNLOAD CV
+            DOWNLOAD CV (.pdf)
           </button>
           <Typography className="mt-12 mb-4 text-blue-gray-900 font-medium uppercase">
             Connect

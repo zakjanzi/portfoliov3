@@ -19,7 +19,7 @@ export function Testimonial() {
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            Time is of the essence, so here&apos;s a summary about my background and experience.
+            A short summary about my background and experience.
           </Typography>
         </div>
         <Card color="transparent" shadow={false} className="py-8 lg:flex-row">

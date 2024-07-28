@@ -12,11 +12,13 @@ interface InfoCardProps {
   date: string;
   children?: React.ReactNode;
   company: string;
-  tools: string;
+  tools: string; // New prop for tools used
   description?: string | string[];
-  imageSrc?: string;
-  isLinked?: boolean; // New prop for conditional rendering
+  imageSrc?: string; // New prop for images
+  isLinked?: boolean; // New prop for conditional rendering of link button
   link?: string; // New prop for the URL
+  isLive?: boolean // New prop for conditional rendering of view live button
+  live?: string //New prop for live app URL
 }
 
 export function InfoCard({
@@ -28,7 +30,9 @@ export function InfoCard({
   description = '',
   imageSrc,
   isLinked = false,
-  link, // Destructure link from props
+  link,
+  isLive = false,
+  live,
 }: InfoCardProps) {
   return (
     <Card className="relative">
@@ -52,7 +56,7 @@ export function InfoCard({
           <Typography color="blue" className="font-bold text-xs">
             {date}
           </Typography>
-          <Typography color="blue" className="font-bold text-xs text-left mr-10">
+          <Typography color="blue-gray" className="font-bold text-xs text-left mr-10">
             {company}
           </Typography>
           <Typography color="blue-gray" variant="h5" className="w-full">
@@ -82,6 +86,13 @@ export function InfoCard({
       <Typography color="gray" className="absolute bottom-2 left-4 mb-1 font-bold text-xs">
         {tools}
       </Typography>
+      {isLive && live && (
+      <Typography color="gray" className="absolute bottom-2 right-4 mb-1 font-bold text-xs underline">
+          <a href={live} target="_blank" rel="noopener noreferrer">
+            VIEW LIVE
+          </a>
+        </Typography>
+      )}
     </Card>
   );
 }
