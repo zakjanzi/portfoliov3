@@ -127,7 +127,7 @@ const PROJECTS = [
     live: "https://zak-gameoflife.netlify.app/",
     children:
       "Conway&apos;s Game of Life cellular automata simulation in JavaScript.",
-    tools: "Tools: 🍦JavaScript, p5.js",
+    tools: "Tools: JavaScript🍦, p5.js",
   },
   // {
   //   icon: FireIcon,
@@ -153,7 +153,7 @@ const PROJECTS = [
     live: "https://teamadrenaline.me",
     children:
       "A static website for a Parkour gym.",
-    tools: "Tools: HTML, SCSS, 🍦JavaScript",
+    tools: "Tools: HTML, SCSS, JavaScript🍦",
   },
 ];
 

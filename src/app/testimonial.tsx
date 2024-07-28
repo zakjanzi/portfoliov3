@@ -28,7 +28,7 @@ export function Testimonial() {
             variant="lead"
             className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
           >
-            A short summary about my background and experience.
+            A short summary of my background and experience.
           </Typography>
         </div>
         <Card 
