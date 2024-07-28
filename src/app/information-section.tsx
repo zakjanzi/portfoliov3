@@ -62,7 +62,7 @@ const WRITING = [
     title: "Zero-Knowledge Proofs: A Shallow Dive",
     date: "2024",
     children: "Demystifying ZK-Proofs using a blend of layman's terms and a bit of technical depth.",
-    link: "s",
+    link: "https://medium.com/@zakjanzi/zero-knowledge-proofs-a-shallow-dive-f3396106fc09",
   },
   {
     title: "Cloud Load Testing",
