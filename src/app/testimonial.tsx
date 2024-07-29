@@ -55,9 +55,9 @@ export function Testimonial() {
                 Tech Stack
               </Typography>
               <ul className="list-disc pl-5">
-                <li><strong>Languages:</strong> Solidity, Java, JavaScript, Python, SQL.</li>
+                <li><strong>Languages:</strong>Java, JavaScript, Python, SQL.</li>
                 <li><strong>Technologies:</strong> MERN, LAMP, NGINX, AWS, Hardhat</li>
-                <li><strong>Testing frameworks:</strong> Selenium, TestNG.</li>
+                <li><strong>Testing frameworks:</strong> Cypress, Selenium, TestNG.</li>
                 <li><strong>Tools:</strong> Git, Jenkins, Docker, Grafana, JMeter.</li>
              </ul>
               <Typography
