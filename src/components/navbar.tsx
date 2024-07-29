@@ -9,8 +9,8 @@ import {
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
-  { name: "Projects", href: "http://zakjanzi.me#projects" },
-  { name: "Bio", href: "http://zakjanzi.me#tldr" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Bio", href: "/#tldr" },
   // { name: "Blog", href: "http://localhost:3000#blog" },
 ];
 
