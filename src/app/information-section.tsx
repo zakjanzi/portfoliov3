@@ -17,7 +17,7 @@ const WORKEXPERIENCE = [
     company: "Lebanese Alternative Learning",
     children: [],
     description: [
-      "Implemented and maintained security measures while continuously monitoring server health.", "Managed deployments across various physical and virtual environments", "Kept detailed documentation on all technical procedures and guides for all stakeholders.", "Contributed to open-source projects (Moodle) " 
+      "Implemented and maintained security measures while continuously monitoring server health.", "Managed deployments across various physical and virtual environments", "Kept detailed documentation on all technical procedures and guides for all stakeholders.", "Contributed to open-source projects (Moodle/IOMAD) " 
     ],
      imageSrc:"/image/lal.png"
   },
