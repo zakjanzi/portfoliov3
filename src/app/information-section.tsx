@@ -170,9 +170,14 @@ export function InformationSection() {
   const [filteredProjects, setFilteredProjects] = useState(PROJECTS);
 
   const handleFilterClick = (filter: SetStateAction<string>) => {
-    setSelectedFilter(filter);
+    // Determine if filter is a function or a string
+    const filterValue = typeof filter === 'function' ? filter('') : filter;
+  
+    setSelectedFilter(filterValue);
     setFilteredProjects(
-      filter === "ALL" ? PROJECTS : PROJECTS.filter((project) => project.date.includes)
+      filterValue === "ALL" 
+        ? PROJECTS 
+        : PROJECTS.filter((project) => project.date.includes(filterValue.toUpperCase()))
     );
   };
 
