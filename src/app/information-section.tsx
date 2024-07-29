@@ -76,6 +76,12 @@ const WRITING = [
     children: "An article about test environment management best practices.",
     link: "https://www.withcoherence.com/post/test-environment-management",
   },
+  {
+    title: "Non-Functional Testing",
+    date: "2023",
+    children: "Non-Functional testing types and best practices.",
+    link: "https://www.multiple.dev/automated-performance-testing/non-functional-testing-types",
+  },
 ];
 const PROJECTS = [
   {
