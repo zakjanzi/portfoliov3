@@ -55,10 +55,10 @@ export function Testimonial() {
                 Tech Stack
               </Typography>
               <ul className="list-disc pl-5">
-                <li><strong>Languages:</strong> Java, JavaScript, Python, SQL.</li>
-                <li><strong>Technologies:</strong> MERN, LAMP, NGINX, AWS</li>
-                <li><strong>Testing frameworks:</strong> Cypress, Selenium, TestNG.</li>
-                <li><strong>Tools:</strong> Git, Jenkins, Docker, Grafana, JMeter.</li>
+                <li><strong>Languages:</strong> Java, JavaScript, Solidity</li>
+                <li><strong>Technologies:</strong> MERN, LAMP, AWS, Hardhat</li>
+                <li><strong>Testing frameworks:</strong> Cypress, Selenium, Appium, TestNG.</li>
+                <li><strong>Tools:</strong> Git, Jenkins, Docker, Grafana, NGINX.</li>
              </ul>
           </div>
             <div className="h-[10rem] rounded-full w-full sm:w-[10rem] shrink-0">
