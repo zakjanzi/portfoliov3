@@ -9,7 +9,7 @@ export function Testimonial() {
   const [active, setActive] = React.useState(3);
 
   return (
-    <section id = "tldr" className="py-12 px-8 lg:py-24">
+<section id="tldr" className="pt-36 pb-44 px-8 lg:pt-36 lg:pb-44">
       <div className="container max-w-screen-lg mx-auto">
         <div className="container mx-auto mb-20 text-center">
           <Typography
@@ -55,39 +55,11 @@ export function Testimonial() {
                 Tech Stack
               </Typography>
               <ul className="list-disc pl-5">
-                <li><strong>Languages:</strong>Java, JavaScript, Python, SQL.</li>
-                <li><strong>Technologies:</strong> MERN, LAMP, NGINX, AWS, Hardhat</li>
+                <li><strong>Languages:</strong> Java, JavaScript, Python, SQL.</li>
+                <li><strong>Technologies:</strong> MERN, LAMP, NGINX, AWS</li>
                 <li><strong>Testing frameworks:</strong> Cypress, Selenium, TestNG.</li>
                 <li><strong>Tools:</strong> Git, Jenkins, Docker, Grafana, JMeter.</li>
              </ul>
-              <Typography
-                variant="h3"
-                color="blue-gray"
-                className="mb-4 font-bold lg:max-w-xs mt-4"
-                placeholder={""}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
-              >
-                Education
-              </Typography>
-              <ul className="list-disc pl-5">
-                <li><strong>ISTQB</strong> Certified QA Tester</li>
-                <li><strong>Bachelors Degree</strong> - Entrepreneurial Management.</li>
-             </ul>
-              <Typography
-                  variant="h3"
-                  color="blue-gray"
-                  className="mb-4 font-bold lg:max-w-xs mt-4"
-                  placeholder={""}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
-                >
-                  Other
-                </Typography>
-                <ul className="list-disc pl-5">
-                  <li><strong>Europe</strong> based</li>
-                  <li><strong>Trilingual</strong></li>
-              </ul>
           </div>
             <div className="h-[10rem] rounded-full w-full sm:w-[10rem] shrink-0">
               <Image

@@ -35,35 +35,6 @@ function Hero() {
             >
               DOWNLOAD CV (.pdf)
           </a>
-          <Typography 
-            className="mt-12 mb-4 text-blue-gray-900 font-medium uppercase"
-            placeholder={""}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}>
-            Connect
-          </Typography>
-          <div className="gap-2 lg:flex">
-          <a href="https://www.linkedin.com/in/zakaria-j-714816111/" target="_blank" rel="noopener noreferrer">
-            <IconButton 
-              variant="text" 
-              color="gray"
-              placeholder={""}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}>
-              <i className="fa-brands fa-linkedin text-lg" />
-            </IconButton>
-            </a>
-            <a href="https://github.com/zakjanzi" target="_blank" rel="noopener noreferrer">
-            <IconButton 
-              variant="text" 
-              color="gray"
-              placeholder={""}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}>
-              <i className="fa-brands fa-github text-lg" />
-            </IconButton>
-            </a>
-          </div>
         </div>
       </div>
     </div>

@@ -59,17 +59,38 @@ export function Navbar() {
       onPointerLeaveCapture={undefined}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          as="a"
-          color="blue-gray"
-          className="text-lg font-bold"
-          placeholder={""}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
-        >
-          Zak&apos;s Portfolio
-        </Typography>
-        <ul className="ml-10 hidden items-center gap-8 lg:flex">
+        <div className="flex items-center gap-2">
+          <Typography
+            as="a"
+            className="text-lg text-blue-gray-900 font-medium uppercase"
+            placeholder={""}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          >
+            CONNECT
+          </Typography>
+          <a href="https://www.linkedin.com/in/zakaria-j-714816111/" target="_blank" rel="noopener noreferrer">
+            <IconButton 
+              variant="text" 
+              color="gray"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
+              <i className="fa-brands fa-linkedin text-lg" />
+            </IconButton>
+          </a>
+          <a href="https://github.com/zakjanzi" target="_blank" rel="noopener noreferrer">
+            <IconButton 
+              variant="text" 
+              color="gray"
+              placeholder={""}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}>
+              <i className="fa-brands fa-github text-lg" />
+            </IconButton>
+          </a>
+        </div>
+        <ul className="hidden items-center gap-14 lg:flex absolute left-1/2 transform -translate-x-1/2">
           {NAV_MENU.map(({ name, href }) => (
             <NavItem key={name} href={href}>{name}</NavItem>
           ))}
