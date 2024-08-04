@@ -12,7 +12,7 @@ import InfoCard from "@/components/info-card";
 const WORKEXPERIENCE = [
   {
     // icon: AcademicCapIcon,
-    title: "SysOps Engineer",
+    title: "DevOps Engineer",
     date: "2023 - Present",
     company: "Lebanese Alternative Learning",
     children: [],
