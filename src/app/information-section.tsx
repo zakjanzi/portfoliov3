@@ -17,7 +17,7 @@ const WORKEXPERIENCE = [
     company: "Lebanese Alternative Learning",
     children: [],
     description: [
-      "Implemented and maintained security measures while continuously monitoring server health.", "Managed deployments across various physical and virtual environments", "Kept detailed documentation on all technical procedures and guides for all stakeholders.", "Contributed to open-source projects (Moodle/IOMAD) " 
+      "Managed configurations and deployments across physical and virtual environments.", "Set up and maintained CI/CD pipelines.", "Updated procedures and documentation.", "Implemented and maintained security measures to while continuously monitoring the health and performance of servers. " 
     ],
      imageSrc:"/image/lal.png"
   },
@@ -28,7 +28,7 @@ const WORKEXPERIENCE = [
     company: "Inbound Square (Contract)",
     children: [],
     description: [
-      "Wrote technical articles covering topics related to SaaS/PaaS tools. See the writing section below for samples.",
+      "Wrote technical articles covering topics related to SaaS/PaaS tools.", "Topics include Cloud Loud Testing, Test Environment Management, Non-Functional Testing."
     ],
     imageSrc: "/image/inbound-square.jpg"
   },
@@ -45,7 +45,7 @@ const WORKEXPERIENCE = [
   },
   {
     // icon: AcademicCapIcon,
-    title: "Manual QA Engineer",
+    title: "Senior Manual QA Engineer",
     date: "2021 - 2023",
     company: "One More Multiverse",
     children: [],
@@ -58,12 +58,12 @@ const WORKEXPERIENCE = [
 ];
 
 const WRITING = [
-  {
-    title: "Zero-Knowledge Proofs: A Shallow Dive",
-    date: "2024",
-    children: "Demystifying ZK-Proofs using a blend of layman's terms and a bit of technical depth.",
-    link: "https://medium.com/@zakjanzi/zero-knowledge-proofs-a-shallow-dive-f3396106fc09",
-  },
+  // {
+  //   title: "Zero-Knowledge Proofs: A Shallow Dive",
+  //   date: "2024",
+  //   children: "Demystifying ZK-Proofs using a blend of layman's terms and a bit of technical depth.",
+  //   link: "https://medium.com/@zakjanzi/zero-knowledge-proofs-a-shallow-dive-f3396106fc09",
+  // },
   {
     title: "Cloud Load Testing",
     date: "2023",
