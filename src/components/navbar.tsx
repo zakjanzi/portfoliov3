@@ -95,7 +95,7 @@ export function Navbar() {
             <NavItem key={name} href={href}>{name}</NavItem>
           ))}
         </ul>
-        <div className="hidden items-center gap-2 lg:flex">
+        {/* <div className="hidden items-center gap-2 lg:flex">
           <a href="https://contra.com/zakjanzi_z23fzkfn" target="_blank">
             <Button color="gray"
                     placeholder={""}
@@ -104,7 +104,7 @@ export function Navbar() {
                     >Hire me on Contra
               </Button>
           </a>
-        </div>
+        </div> */}
         <IconButton
           variant="text"
           color="gray"

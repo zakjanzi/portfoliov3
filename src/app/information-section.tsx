@@ -23,17 +23,6 @@ const WORKEXPERIENCE = [
   },
   {
     // icon: AcademicCapIcon,
-    title: "Technical Writer",
-    date: "2023 - Present",
-    company: "Inbound Square (Contract)",
-    children: [],
-    description: [
-      "Wrote technical articles covering topics related to SaaS/PaaS tools.", "Topics include Cloud Loud Testing, Test Environment Management, Non-Functional Testing."
-    ],
-    imageSrc: "/image/inbound-square.jpg"
-  },
-  {
-    // icon: AcademicCapIcon,
     title: "QA Automation Engineer",
     date: "2022 - 2023",
     company: "Tylleum - (Contract)",
@@ -42,6 +31,17 @@ const WORKEXPERIENCE = [
       "Produced and executed automated end-to-end tests for a Web3 wallet app. ", "Analyzed software requirements to create high-coverage test cases" , "Maintained thorough records of test cases, results, and scripts."
     ],
     imageSrc:"/image/tylleum.jpg"
+  },
+  {
+    // icon: AcademicCapIcon,
+    title: "Technical Writer",
+    date: "2023 - Present",
+    company: "Inbound Square (Contract)",
+    children: [],
+    description: [
+      "Wrote technical articles covering topics related to SaaS/PaaS tools.", "Topics include Cloud Loud Testing, Test Environment Management, Non-Functional Testing."
+    ],
+    imageSrc: "/image/inbound-square.jpg"
   },
   {
     // icon: AcademicCapIcon,
@@ -72,15 +72,21 @@ const WRITING = [
   },
   {
     title: "Test Environment Management",
-    date: "2023",
+    date: "2024",
     children: "An article about test environment management best practices.",
     link: "https://www.withcoherence.com/post/test-environment-management",
   },
   {
     title: "Non-Functional Testing",
-    date: "2023",
+    date: "2024",
     children: "Non-Functional testing types and best practices.",
     link: "https://www.multiple.dev/automated-performance-testing/non-functional-testing-types",
+  },
+  {
+    title: "Playwright API Testing - (in progress)",
+    date: "2024",
+    children: "A comprehensive guide for API testing with Playwright, including practical examples and best practices.",
+    link: "",
   },
 ];
 const PROJECTS = [
@@ -132,7 +138,7 @@ const PROJECTS = [
     link: "https://github.com/zakjanzi/Conways-Game-of-Life",
     live: "https://zak-gameoflife.netlify.app/",
     children:
-      "Conway&apos;s Game of Life cellular automata simulation in JavaScript.",
+      "Conway's Game of Life cellular automata simulation in JavaScript.",
     tools: "Tools: JavaScript🍦, p5.js",
   },
   // {
