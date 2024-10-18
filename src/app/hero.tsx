@@ -24,7 +24,7 @@ function Hero() {
             color="gray"
             className="mt-12 mb-5 w-full md:max-w-full lg:max-w-4xl"
           >
-           A QA Engineer with a strong DevOps background. <br></br> I also like cryptography and distributed systems.
+           A DevOps Engineer with a strong QA background. <br></br> I also like cryptography and distributed systems.
           </Typography>
           <a
               href="/image/CV_Zak.pdf"
