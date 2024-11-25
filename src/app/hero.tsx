@@ -14,7 +14,7 @@ function Hero() {
             placeholder={""}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}>
-            Hi, I&apos;m Zak.
+            Zak Janzi
           </Typography>
           <Typography
             placeholder={""}
@@ -24,7 +24,7 @@ function Hero() {
             color="gray"
             className="mt-12 mb-5 w-full md:max-w-full lg:max-w-4xl"
           >
-           A DevOps Engineer with a strong QA background. <br></br> I also like cryptography and distributed systems.
+           QA, DevOps and all things automation. <br></br>
           </Typography>
           <a
               href="/image/CV_Zak.pdf"

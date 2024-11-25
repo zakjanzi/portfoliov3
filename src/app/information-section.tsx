@@ -83,7 +83,7 @@ const WRITING = [
     link: "https://www.multiple.dev/automated-performance-testing/non-functional-testing-types",
   },
   {
-    title: "Playwright API Testing - (in progress)",
+    title: "Playwright API Testing",
     date: "2024",
     children: "A comprehensive guide for API testing with Playwright, including practical examples and best practices.",
     link: "",
