@@ -17,21 +17,46 @@ const WORKEXPERIENCE = [
     company: "Lebanese Alternative Learning",
     children: [],
     description: [
-      "Managed configurations and deployments across physical and virtual environments.", "Set up and maintained CI/CD pipelines.", "Updated procedures and documentation.", "Implemented and maintained security measures to while continuously monitoring the health and performance of servers. " 
+      "Tuning CDNs, caching policies, and TLS configurations to improve performance and reliability.",
+      "Maintaining observability and uptime by proactively monitoring and handling incidents.",
+      "Developing and maintaining automated test pipelines alongside DevOps processes.",
+      "Managing high-availability systems and implementing scaling strategies for large traffic volumes.",
+      "Focusing on cost optimization while ensuring secure and efficient infrastructure.",
+      "Identifying release risks early by aligning infrastructure with test coverage and quality checks."
     ],
-     imageSrc:"/image/lal.png"
+    imageSrc: "/image/lal.png"
   },
   {
     // icon: AcademicCapIcon,
+    title: "QA Engineer",
+    date: "2023 - Present",
+    company: "Novo",
+    children: [],
+    description: [
+      "Measured page load times and optimized resource requests.",
+      "Tested backend scalability under different load conditions.",
+      "Evaluated AI tool latency and responsiveness under stress.",
+      "Developed and executed end-to-end tests.",
+      "Detected model performance drift and ensured retraining triggers are in place.",
+      "Conducted manual testing of new features and integrations."
+    ],
+    imageSrc: "/image/novo.png"
+  },  
+  {
+    // icon: AcademicCapIcon,
     title: "QA Automation Engineer",
-    date: "2022 - 2023",
+    date: "2021 - 2023",
     company: "Tylleum - (Contract)",
     children: [],
     description: [
-      "Produced and executed automated end-to-end tests for a Web3 wallet app. ", "Analyzed software requirements to create high-coverage test cases" , "Maintained thorough records of test cases, results, and scripts."
+      "Defined and communicated a QA approach tailored to the Web3 landscape.",
+      "Analyzed software requirements and designed test cases with maximum coverage.",
+      "Designed, developed, and maintained E2E tests for mobile and web versions of the app.",
+      "Performed functional & non-functional testing.",
+      "Generated defect reports and identified blocking issues."
     ],
-    imageSrc:"/image/tylleum.jpg"
-  },
+    imageSrc: "/image/tylleum.jpg"
+  },  
   {
     // icon: AcademicCapIcon,
     title: "Technical Writer",
@@ -46,7 +71,7 @@ const WORKEXPERIENCE = [
   {
     // icon: AcademicCapIcon,
     title: "Senior Manual QA Engineer",
-    date: "2021 - 2023",
+    date: "2020 - 2022",
     company: "One More Multiverse",
     children: [],
     description: [
