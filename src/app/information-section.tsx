@@ -12,6 +12,22 @@ import InfoCard from "@/components/info-card";
 const WORKEXPERIENCE = [
   {
     // icon: AcademicCapIcon,
+    title: "QA Engineer",
+    date: "2025 - Present",
+    company: "Novo",
+    children: [],
+    description: [
+      "Measured page load times and optimized resource requests.",
+      "Tested backend scalability under different load conditions.",
+      "Evaluated AI tool latency and responsiveness under stress.",
+      "Developed and executed end-to-end tests.",
+      "Detected model performance drift and ensured retraining triggers are in place.",
+      "Conducted manual testing of new features and integrations."
+    ],
+    imageSrc: "/image/novo.png"
+  },  
+  {
+    // icon: AcademicCapIcon,
     title: "DevOps Engineer",
     date: "2023 - Present",
     company: "Lebanese Alternative Learning",
@@ -26,22 +42,6 @@ const WORKEXPERIENCE = [
     ],
     imageSrc: "/image/lal.png"
   },
-  {
-    // icon: AcademicCapIcon,
-    title: "QA Engineer",
-    date: "2023 - Present",
-    company: "Novo",
-    children: [],
-    description: [
-      "Measured page load times and optimized resource requests.",
-      "Tested backend scalability under different load conditions.",
-      "Evaluated AI tool latency and responsiveness under stress.",
-      "Developed and executed end-to-end tests.",
-      "Detected model performance drift and ensured retraining triggers are in place.",
-      "Conducted manual testing of new features and integrations."
-    ],
-    imageSrc: "/image/novo.png"
-  },  
   {
     // icon: AcademicCapIcon,
     title: "QA Automation Engineer",
